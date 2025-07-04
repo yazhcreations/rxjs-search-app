@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "rxjs-fun-app": {
+    "rxjs-search-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,11 +13,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/rxjs-fun-app",
+            "outputPath": "dist/rxjs-search-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "baseHref": "/rxjs-search-app/",
             "aot": true,
             "assets": [
               "src/favicon.ico",
@@ -61,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "rxjs-fun-app:build"
+            "browserTarget": "rxjs-search-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "rxjs-fun-app:build:production"
+              "browserTarget": "rxjs-search-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rxjs-fun-app:build"
+            "browserTarget": "rxjs-search-app:build"
           }
         },
         "test": {
@@ -109,16 +110,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "rxjs-fun-app:serve"
+            "devServerTarget": "rxjs-search-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "rxjs-fun-app:serve:production"
+              "devServerTarget": "rxjs-search-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "rxjs-fun-app"
+  "defaultProject": "rxjs-search-app"
 }
