@@ -1,27 +1,42 @@
-# RxjsFunApp
+# 🔍 RxJS Live Search App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.15.
+A simple Angular app to demonstrate RxJS in action — using real-time user search with debounce, filter, and local caching. Built using [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) as a free live API.
 
-## Development server
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue?style=for-the-badge)](https://yazhcreations.github.io/rxjs-search-app/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- 🔄 Live search with debounce (`debounceTime`)
+- 📉 Optimized filtering with `distinctUntilChanged`
+- 🔍 Instant filter from locally cached users (no multiple API hits)
+- 💄 Clean UI with Flexbox layout and emoji icons
+- ⚡ RxJS operators: `tap`, `filter`, `takeUntil`
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## 🛠️ Tech Stack
 
-## Running unit tests
+- [Angular](https://angular.io/)
+- [RxJS](https://rxjs.dev/)
+- [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 📦 Setup Instructions
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```bash
+git clone https://github.com/yazhcreations/rxjs-search-app.git
+cd rxjs-search-app
+npm install
+ng serve
+✨ Screenshots
+Coming soon…
 
-## Further help
+🤝 Contribute
+Feel free to fork, suggest improvements, or just star the repo!
+This is for fun and learning RxJS the cool way.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+📄 License
+MIT License © 2025 yazhcreations
