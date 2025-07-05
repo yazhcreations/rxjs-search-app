@@ -1,42 +1,70 @@
 # 🔍 RxJS Live Search App
 
-A simple Angular app to demonstrate RxJS in action — using real-time user search with debounce, filter, and local caching. Built using [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) as a free live API.
+A fun and functional Angular application that demonstrates real-time search with RxJS operators, using a live API. Built with clean UI, modular components, and advanced RxJS concepts.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue?style=for-the-badge)](https://yazhcreations.github.io/rxjs-search-app/)
-
----
-
-## 🚀 Features
-
-- 🔄 Live search with debounce (`debounceTime`)
-- 📉 Optimized filtering with `distinctUntilChanged`
-- 🔍 Instant filter from locally cached users (no multiple API hits)
-- 💄 Clean UI with Flexbox layout and emoji icons
-- ⚡ RxJS operators: `tap`, `filter`, `takeUntil`
+🔗 **Live Demo**: [https://yazhcreations.github.io/rxjs-search-app/](https://yazhcreations.github.io/rxjs-search-app/)
 
 ---
 
-## 🛠️ Tech Stack
+## 🧠 Features
 
-- [Angular](https://angular.io/)
+| Feature                         | RxJS / Angular Concept Used          |
+|-------------------------------|-------------------------------------|
+| ✅ Live API search             | `debounceTime`, `switchMap`, `distinctUntilChanged` |
+| 🔁 Retry on error              | `retry`, `catchError`, `finalize`   |
+| ⚠️ Error message fallback      | `catchError`                         |
+| ⛔ Cancel previous request     | `switchMap`                          |
+| 🔄 Skeleton loading            | No spinner, UX-friendly loaders     |
+| 🧍 Avatar support              | Using user profile or fallback      |
+| 🧱 3-column responsive layout  | Grid layout with fixed scroll area  |
+| 🪟 Modal popup for details     | `*ngIf` + CSS modal animation       |
+| 🧼 Clears search restores all  | Local backup of initial data        |
+
+---
+
+## 📸 Screenshots
+
+| Live Search | User Detail Modal |
+|-------------|-------------------|
+| ![Search](./screenshots/search.png) | ![Modal](./screenshots/modal.png) |
+
+> _Add these screenshots to `/screenshots/` folder in the repo._
+
+---
+
+## ⚙️ Tech Stack
+
+- [Angular](https://angular.io/) 11
 - [RxJS](https://rxjs.dev/)
-- [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [DummyJSON API](https://dummyjson.com/)
 
 ---
 
-## 📦 Setup Instructions
+## 🏗️ How to Run Locally
 
 ```bash
 git clone https://github.com/yazhcreations/rxjs-search-app.git
 cd rxjs-search-app
 npm install
 ng serve
-✨ Screenshots
-Coming soon…
+🚀 Deployment
+To deploy to GitHub Pages:
 
-🤝 Contribute
-Feel free to fork, suggest improvements, or just star the repo!
-This is for fun and learning RxJS the cool way.
+ng build --base-href "https://yazhcreations.github.io/rxjs-search-app/"
+npx angular-cli-ghpages --dir=dist/rxjs-search-app
 
+❤️ Credits
+API: DummyJSON
+Avatars: UI Avatars
+
+📌 TODO (Future Enhancements)
+🔽 Sort by Name, Age, Gender
+
+🔍 Filter dropdowns (Gender, Country)
+
+📱 Better mobile UX
+
+🧪 Unit tests with RxJS marble testing
 📄 License
 MIT License © 2025 yazhcreations
